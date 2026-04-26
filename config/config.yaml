@@ -165,7 +165,7 @@ rss:
 # - incremental：最少打扰，只看新增
 # ===============================================================
 report:
-  mode: "incremental"                     # daily | current | incremental（schedule 开启时作为默认值）
+  mode: "current"                     # daily | current | incremental（schedule 开启时作为默认值）
 
   display_mode: "keyword"             # 分组维度: keyword | platform
                                       # keyword: 按关键词分组显示（默认）
@@ -337,7 +337,7 @@ notification:
 
     wework:
       webhook_url: ""                 # 企业微信机器人 webhook URL
-      msg_type: "markdown"            # 消息类型：markdown(群机器人) | text(个人微信应用)
+      msg_type: "text"            # 消息类型：markdown(群机器人) | text(个人微信应用)
 
     telegram:
       bot_token: ""                   # Telegram Bot Token
