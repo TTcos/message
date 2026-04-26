@@ -59,28 +59,20 @@ platforms:
     #  name: "今日头条"
     #- id: "baidu"
     #  name: "百度热搜"
+    - id: "cankaoxiaoxi"
+      name: "参考消息"
     - id: "wallstreetcn-hot"
       name: "华尔街见闻"
-    - id: "thepaper"
-      name: "澎湃新闻"
-    #- id: "bilibili-hot-search"
-    #  name: "bilibili 热搜"
     - id: "cls-hot"
       name: "财联社热门"
     - id: "ifeng"
       name: "凤凰网"
     - id: "jin10"
       name: "金十数据"
-    #- id: "weibo"
-    #  name: "微博"
-    #- id: "douyin"
-    #  name: "抖音"
-    #- id: "zhihu"
-    #  name: "知乎"
     - id: "xueqiu"
       name: "雪球"
-    - id: "cankaoxiaoxi"
-      name: "参考消息"
+    - id: "thepaper"
+      name: "澎湃新闻"
 
 
 
@@ -293,7 +285,7 @@ display:
   # 两者共享此处的平台/RSS 配置，但开关互相独立（可只开 AI 分析、不推送展示）
   standalone:
     platforms: ["zhihu", "wallstreetcn-hot"]     # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
-    rss_feeds: []                     # RSS 源 ID 列表（如 ["hacker-news"]）
+    rss_feeds: ["China Financial and Economic News","renmincaixun"] # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 20                     # 每个源最多展示条数（0=不限制）
 
 
