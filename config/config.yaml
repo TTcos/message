@@ -41,7 +41,7 @@ app:
 # ===============================================================
 schedule:
   enabled: true                         # 是否启用调度系统
-  preset: "morning_evening"             # 预设模板名称（见上方说明）
+  preset: "office_hours"             # 预设模板名称（见上方说明）
 
 
 # ===============================================================
@@ -117,10 +117,6 @@ rss:
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       enabled: false
 
-    - id: "yahoo-finance"
-      name: "雅虎财经"
-      url: "https://finance.yahoo.com/news/rssindex"
-
     - id: "China Financial and Economic News"
       name: "中国财经报"
       url: "http://www.dogear.cn/feed/10800.xml"
@@ -140,6 +136,7 @@ rss:
     - id: "sse-announcement-full"
       name: "上交所全量公告"
       url: "https://filingreader.com/rss/exchange/shanghai"
+
 
 
 
@@ -280,7 +277,7 @@ display:
     standalone: true # 独立展示区（完整热榜/RSS，不受关键词过滤）
     ai_analysis: true # AI 分析区域
   standalone:
-    platforms: ["zhihu"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
+    platforms: ["zhihu","jin10"] # 热榜平台 ID 列表（如 ["zhihu", "weibo"]）
     rss_feeds: ["China Financial and Economic News","renmincaixun","xueqiu-hot-topics"] # RSS 源 ID 列表（如 ["hacker-news"]）
     max_items: 10                     # 每个源最多展示条数（0=不限制）
 
@@ -509,7 +506,7 @@ ai_analysis:
                                       # GitHub Action 部署默认推送约 20 次（每小时推送一次）， 约 0.1 元/天
                                       # Docker 部署默认推送 48 次(每半小时推送一次)， 约 0.2 元/天
 
-  include_rss: false                # 是否包含 RSS 内容进行分析
+  include_rss: true                # 是否包含 RSS 内容进行分析
   
   include_standalone: true          # 是否将独立展示区数据纳入 AI 分析
                                     # 数据源列表来自 display.standalone.platforms / display.standalone.rss_feeds
