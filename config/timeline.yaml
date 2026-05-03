@@ -280,7 +280,7 @@ presets:
       workday:
         periods: ["morning_briefing", "noon_update", "closing_summary"]
       weekend:
-        periods: ["weekend_free"]  # 周末：有新增就推，不打扰睡眠
+        periods: ["weekend_free", "morning_briefing", "noon_update", "closing_summary"]
 
     week_map:
       1: "workday"                 # 周一 → 工作日计划
