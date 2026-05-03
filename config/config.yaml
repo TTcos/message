@@ -71,6 +71,10 @@ platforms:
       name: "金十数据"
     - id: "thepaper"
       name: "澎湃新闻"
+    - id: "gelonghui"
+      name: "格隆汇"
+    - id: "fastbull"
+      name: "快讯通"
 
 
 
@@ -117,14 +121,6 @@ rss:
       url: "http://www.ruanyifeng.com/blog/atom.xml"
       enabled: false
 
-    - id: "China Financial and Economic News"
-      name: "中国财经报"
-      url: "http://www.dogear.cn/feed/10800.xml"
-
-    - id: "renmincaixun"
-      name: "人民财讯"
-      url: "https://rsshub.app/stcn/article/list/kx"
-
     - id: "szse-announce"
       name: "深圳证券交易所公告"
       url: "https://filingreader.com/rss/exchange/shenzhen"
@@ -136,6 +132,8 @@ rss:
     - id: "sse-announcement-full"
       name: "上交所全量公告"
       url: "https://filingreader.com/rss/exchange/shanghai"
+
+
 
 
 
